@@ -1,22 +1,255 @@
+<!DOCTYPE html>
 <html>
 <head>
-
-
+<style>
+    body{
+        background-color: rgba(144, 255, 255, 0.829);
+        font-family: Calibri, Helvetica, sans-serif;
+        font-size: medium;
+    }
+    h1{
+        font-size: x-large;
+        margin-top: 25px;
+        margin-bottom: 25px;
+        }
+    h2{
+        font-size: large; 
+        font-weight: 500;
+        }
+    h3{
+        font-size: large;
+        font-weight: 200;
+    }
+    p{
+        font-size: medium; 
+        font-weight: 200;
+        }
+    div ul{
+        list-style-type: none;
+        }
+    div ul>li{
+        font-size: medium; 
+        font-weight: 200;
+        margin-bottom: 5px;
+        }
+    div#contents li{
+            font-size: medium; 
+            font-weight: 200;
+            margin-bottom: 5px;
+        }
+    div#contents li{
+            font-size: medium; 
+            font-weight: 200;
+            margin-bottom: 5px;
+        }
+        img.main_images{
+        width: 500px;
+        border-width: 2px;
+        border-color: black;
+        border-style: solid;
+    }
+    figure{
+        width: 500px;
+        margin:0;
+        margin-bottom: 25px;
+    }
+    figcaption{
+        font-size:medium;
+        margin-top: 10px;
+    }
+    #main{
+        margin-left:200px;
+        max-width:600px;
+    }
+    div.chunk{
+        background-color: white;
+        border-radius: 25px;
+        padding: 25px;
+        margin-bottom: 25px;
+    }
+    #profile_image{
+        width: 180px;
+        height: 180px;
+        position: fixed;
+        left: 10px;
+        top: 10px;
+    }
+    #contents{
+        width: 180px;
+        position: fixed;
+        left: 10px;
+        top: 200px;
+    }
+    ol.contents_list{
+        list-style-type: none;
+        padding: 0;
+    }
+    ol.contents_list>li{
+        margin-bottom: 5px;
+        font-weight: lighter;
+    }
+    ol.subcontents_list{
+        list-style-type: none;
+        padding-left: 20px;
+    }
+    ol.subcontents_list>li{
+        margin-top: 5px;
+        font-weight: lighter;
+    }
+    a:link{
+        text-decoration: none;
+        color: black;
+    } 
+    /*a.main_link:link{
+        text-decoration: none;
+        color: black;
+        font-weight: 700;
+    } */
+    a:visited{
+        text-decoration: none;
+        color: black;
+    }
+    /*a.main_link:visited{
+        text-decoration: none;
+        color: black;
+    }*/
+    a:hover{
+        font-weight:500;
+    }
+    /*a.main_link:hover{
+        font-weight:400;
+    }*/
+    a:active{
+        color: purple;
+    }
+    
+</style>
 </head>
 <body>
+    <img src="profile_image.png" id="profile_image" alt="a person's face, close up grey scale ."/>
+    <div id="contents">
+        <ol class="contents_list">
+            <li><a href="#C1">Personal Information</a></li>
+            <li><a href="#C2">Interest in IT</a></li>
+            <li><a href="#C3">Ideal Job</a></li>
+            <li>
+                <a href="#C4">Personal Profile</a>
+                <ol class=subcontents_list>
+                    <li>
+                        <a href="#P1">Myers Briggs</a>
+                    </li>
+                    <li>
+                        <a href="#P2">Learning Style</a>
+                    </li>
+                    <li>
+                        <a href="#P3">Birth Chart</a>
+                    </li>
+                </ol>
+            </li>
+            <li><a href="#C5">Project Idea</a></li>
+            <ol class=subcontents_list>
+                <li>
+                    <a href="#J1">Overview</a>
+                </li>
+                <li>
+                    <a href="#J2">Motivation</a>
+                </li>
+                <li>
+                    <a href="#J3">Description</a>
+                </li>
+                <li>
+                    <a href="#J4">Tools and Technologies</a>
+                </li>
+                <li>
+                    <a href="#J5">Skills Required</a>
+                </li>
+                <li>
+                    <a href="#J6">Outcome</a>
+                </li>
+            </ol>
+            <li><a href="#C6">List of Figures</a></li>
 
-  <!-- HEADER/ SIDE BAR -->
-  <div id="header">
-  </div>
+        </ol>
+    </div>
 
-  <!-- MAIN SECTION -->
-  <div id="main">
-    
-    <h1>Group 16 Assignment Task 2</h1>
-    <h2>Testing Git access - Jack</h2>
-    
-  </div>
-  
-<div></div>
+    <div id="main">
+    <h1>Introduction to IT - Assignment 1</h1>
+
+        <div class="chunk" id="C1">
+            <h2>Personal Information<h2>
+            <ul>
+                <li>Name Redacted</li>
+                <li>Student ID: redacted</li>
+                <li>email: redacted</li>
+                <li>Education: redacted</li>
+                <li>Text.</li>
+            </ul>
+        </div>
+
+        <div class="chunk" id="C2">
+            <h2>Interest In Information Technology<h2>
+            <p>
+                Text. 
+            </p>
+        </div>
+
+        <div class="chunk" id="C3">
+            <h2>Ideal Job<h2>
+            <p>
+            Text. 
+            </p>
+
+        </div>
+
+        <div class="chunk" id="C4">
+            <h2>Personal Profile<h2>
+            <p>
+                Text.
+            </p>
+              
+            <h3 id="P1" >Myers-Briggs Type Indicator</h3>
+
+                <figure>
+                    <img class="main_images" src="example.png" alt="Alt text."/>
+                    <figcaption><b>Figure 4.</b> <i>Title</i> by Author, Date </figcaption>
+                </figure>
+
+        </div>
+
+        <div class="chunk" id="C5">
+            <h2>Project Idea<h2>
+                <h3 id="J1" >Overview</h3>
+                <p>
+                    Text. 
+                </p>
+                <h3 id="J2" >Motivation</h3>
+                <p>
+                    Text.
+                </p>
+                <h3 id="J3" >Description</h3>
+                <p>
+                    Text.   
+                </p>
+                <h3 id="J4" >Tools and Technologies</h3>
+                <p>
+                    Text. 
+                </p>
+                <h3 id="J5" >Skills Required</h3>
+                <p>
+                    Text.  
+                </p>
+                <h3 id="J6" >Outcome</h3>
+                <p>
+                  Text.
+                  </p>
+        </div>
+        <div class="chunk" id="C6">
+            <h2>List of Figures</h2>
+            <p>
+                <b>Figure 1.</b> Author <i>Title</i>, Publisher, viewed xx January 2021, &lt;<a href="" </a>&gt;
+            </p>
+            
+        </div>
+    </div>
 </body>
 </html>
